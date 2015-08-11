@@ -23,7 +23,7 @@ body {
 }
 #content {
   box-sizing: border-box;
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom:20px; /* Height of the footer element */
 }
 #footer {
@@ -33,5 +33,4 @@ body {
   bottom:0;
   left:0;
 }
-
 
