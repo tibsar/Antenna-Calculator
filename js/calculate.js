@@ -10,3 +10,11 @@ function calculate() {
   $("#or").text("or")
   $("#meters").text(length_meters + " meters");
 }
+
+function validateForm() {
+  var isValid = true;
+  if ( $("#frequency").val() === '' ){
+    isValid = false;
+  }
+  return isValid;
+}
