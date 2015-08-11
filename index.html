@@ -8,37 +8,44 @@
   <meta name="description" content="The KD2GTM Antenna Calculator">
   <meta name="author" content="KD2GTM">
 
-<!--   <link rel="stylesheet" href="css/styles.css?v=1.0">
--->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Walter+Turncoat">
+
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <center>
-    <h1>KD2GTM's Antenna Calculator</h1>
-    Desired Frequency: 
-    <input type="number" name="frequency" id="frequency"  step="0.001"> MHz
-    <br><br>
-    Desired Wavelength: 
-    <select id="wavelength">
-      <option value="8">Full</option>
-      <option value="7">7/8</option>
-      <option value="6">3/4</option>
-      <option value="5">5/8</option>
-      <option value="4">1/2</option>
-      <option value="3">3/8</option>
-      <option value="2">1/4</option>
-      <option value="1">1/8</option>
-    </select>
-    <br><br>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/calculate.js"></script>
-    <button onclick="calculate()">Calculate</button>
-    <h2>The length is:</h2>
-    <h2 id="feet"></h2>
-    <h2 id="meters"></h2>
-  </center>
+  <div id="wrapper">
+    <div id="content">
+     <h1>KD2GTM's Antenna Calculator</h1>
+      Desired Frequency: 
+      <input type="number" name="frequency" id="frequency"  step="0.001"> MHz
+      <br><br>
+      Desired Wavelength: 
+      <select id="wavelength">
+        <option value="8">Full</option>
+        <option value="7">7/8</option>
+        <option value="6">3/4</option>
+        <option value="5">5/8</option>
+        <option value="4">1/2</option>
+        <option value="3">3/8</option>
+        <option value="2">1/4</option>
+        <option value="1">1/8</option>
+      </select>
+      <br><br>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="js/calculate.js"></script>
+      <button onclick="calculate()">Calculate</button>
+      <h3 id="length"></h2>
+      <h2 id="feet"></h2>
+      <p id="or"></p>
+      <h2 id="meters"></h2>
+    </div>
+    <div id="footer">
+      Created by <a href="http://twitter.com/KD2GTM/" target="_blank">KD2GTM</a>
+    </div>
+  </div>
 </body>
 </html>
